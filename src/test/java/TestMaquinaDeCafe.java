@@ -46,6 +46,13 @@ public class TestMaquinaDeCafe {
         Vaso vaso = maquinaDeCafe.getTipoDeVaso("grande");
         assertEquals(maquinaDeCafe.vasosGrande, vaso);
     }
+    
+    @Test
+    public void deberiaDevolverUnVasoPremiun() {
+        MaquinaDeCafe maquinaDeCafe = new MaquinaDeCafe();
+        Vaso vaso = maquinaDeCafe.getTipoDeVaso("premiun");
+        assertEquals(maquinaDeCafe.vasosPremiun, vaso);
+    }
 
     @Test
     public void deberiaDevolverNoHayVasos() {

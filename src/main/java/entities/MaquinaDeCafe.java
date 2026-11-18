@@ -6,6 +6,7 @@ public class MaquinaDeCafe {
     public Vaso vasosPequeno;
     public Vaso vasosMediano;
     public Vaso vasosGrande;
+    public Vaso vasosPremiun;
     private Azucarero azucarero;
 
     public void setCafetera(Cafetera cafetera) {
@@ -59,7 +60,8 @@ public class MaquinaDeCafe {
 
             case "grande":
                 return vasosGrande;
-
+            case "premiun":
+                return vasosPremiun;
             default:
                 return null;
         }
